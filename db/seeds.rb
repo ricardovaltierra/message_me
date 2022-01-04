@@ -10,4 +10,8 @@
     username: "user_#{number}",
     password: '123456'
   )
+
+  user.messages.create(
+    body: "Message here number #{number}"
+  )
 end
