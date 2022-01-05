@@ -10,8 +10,10 @@
     username: "user_#{number}",
     password: '123456'
   )
+end
 
+User.all.each_with_index do |user, index|
   user.messages.create(
-    body: "Message here number #{number}"
+    body: "Message here number #{index}"
   )
 end
